@@ -1,5 +1,11 @@
-.image-container {
-    position: absolute;
-    background-image: url("mehdi-sepehri-cX0Yxw38cx8-unsplash.jpg");
+body {
+    background-image: 
+    url(mehdi-sepehri-cX0Yxw38cx8-unsplash.jpg),
+    url(odin-lined.png);
 }
 
+.second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

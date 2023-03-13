@@ -1,11 +1,101 @@
 body {
     background-image: 
-    url(mehdi-sepehri-cX0Yxw38cx8-unsplash.jpg),
-    url(odin-lined.png);
+    url(mehdi-sepehri-cX0Yxw38cx8-unsplash.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 900px;
+    padding: 0;
+    margin: 0;
+}
+
+.first-container {
+    background-color: burlywood;
+    height: auto;
+    margin: 0px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
 }
 
 .second-container {
-    display: flex;
+    background-color: blanchedalmond;
+    width: 900px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
+
+.third-container {
+    background-color: aqua;
+    width: 900px;
+    padding-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+}
+
+.submit {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .submit::before,
+  .submit::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    transition: border-color 0.75s ease;
+  }
+  
+  .submit::before {
+    transform: translate(-10px, 10px);
+  }
+  
+  .submit::after {
+    transform: translate(10px, -10px);
+  }
+  
+  .submit:hover::before,
+  .submit:hover::after {
+    border-color: #f37806;
+  }

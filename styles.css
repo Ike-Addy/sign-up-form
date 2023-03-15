@@ -18,84 +18,62 @@ body {
     align-items: flex-start;
     flex-direction: column;
     width: 900px;
-    padding: 0;
-    margin: 0;
 }
 
 .first-container {
-    background-color: burlywood;
+    background-color: rgb(221, 220, 220);
     height: auto;
     margin: 0px;
     padding-top: 200px;
     padding-bottom: 50px;
-    /* display: flex;
-    justify-content: center;
-    align-content: center; */
+    width: 100%;
 }
 
 .second-container {
-    background-color: blanchedalmond;
-    width: 900px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    background-color: whitesmoke;
+    width: 100%;
 }
 
 .third-container {
-    background-color: aqua;
-    width: 900px;
-    padding-top: 10px;
+    background-color: rgb(221, 220, 220);
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
 }
 
 form {
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
     flex-direction: column;
-  }
+}
   
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    width: 130px;
+    float: left;
 }
 
 input:focus {
     outline: none;
-    border-color: blue;
-    box-shadow: 0 0 5px blue;
+    border-color: rgb(4, 124, 199);
+    box-shadow: 0 0 5px rgb(4, 124, 199);
 }
 
-.submit {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  
-  .submit::before,
-  .submit::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px solid transparent;
-    transition: border-color 0.75s ease;
-  }
-  
-  .submit::before {
-    transform: translate(-10px, 10px);
-  }
-  
-  .submit::after {
-    transform: translate(10px, -10px);
-  }
-  
-  .submit:hover::before,
-  .submit:hover::after {
-    border-color: #f37806;
-  }
+input {
+  width: 25%;
+}
+
+button {
+  box-shadow: inset 0 0 0 0 rgb(4, 124, 199);
+  color: black;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-size: 20px;
+  border-radius: 4px;
+  border-color: rgb(4, 124, 199);
+}
+
+button:hover {
+  box-shadow: inset 200px 0 0 0 rgb(4, 124, 199);
+  color: rgb(255, 255, 255);
+}

@@ -50,7 +50,7 @@ body {
 
     font-weight: bolder;
     margin-bottom: 20rem;
-    position: relative;
+    flex-shrink: 3;
 }
 
 .logo img {
@@ -114,6 +114,17 @@ label {
     letter-spacing: 1px;
 }
 
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: whitesmoke;
+    padding: 5px 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
 .end {
     margin-top: 2rem;
 }
@@ -141,6 +152,7 @@ button {
 button:hover {
     animation: pulse 1s infinite;
     transition: .6s;
+    cursor: pointer;
 }
 
 @keyframes pulse {
